@@ -1,7 +1,7 @@
 # bagcc
-esx_policejob
+################################################################################################
 esx_policejob\client\main.lua add 
-
+ 
 AddEventHandler('esx_policejob:hasEnteredEntityZonee', function(entity)
 	local playerPed = PlayerPedId()
 
@@ -27,3 +27,21 @@ AddEventHandler('esx_policejob:hasExitedEntityZonee', function(entity)
 		CurrentAction = nil
 	end
 end)
+################################################################################################
+ox_inventory\data\items.lua
+add
+	['clothesbag'] = {
+		label = 'clothesbag',
+		weight = 2000,
+		client = {
+			anim = { dict = 'random@domestic', clip = 'pickup_low' },
+            usetime = 2000,
+			export = 'bagcc.clothesbag',
+		 
+		}
+	},
+################################################################################################
+add fivem-appearance	
+################################################################################################
+	
+	
