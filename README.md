@@ -22,7 +22,6 @@ AddEventHandler('esx_policejob:hasEnteredEntityZonee', function(entity)
 		end
 	end
 end)
-
 AddEventHandler('esx_policejob:hasExitedEntityZonee', function(entity)
 	if CurrentAction == 'remove_entityy' then
 		CurrentAction = nil
